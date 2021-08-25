@@ -22,6 +22,9 @@ function checkBillAmount(){
 function showError(errorMessage){
     errorTag.style.display = "block";
     errorTag.innerHTML = errorMessage;
+    notesAvailable.forEach(cell => {
+        cell.innerHTML = "";
+      });
 }
 
 function calculate(billAmountValue,cashGivenValue){
