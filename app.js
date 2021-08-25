@@ -35,8 +35,8 @@ function calculate(billAmountValue,cashGivenValue){
 
 }
 function checkCashGiven(){
-    var cashGivenValue = cashGiven.value;
-    var billAmountValue = billAmount.value;
+    var cashGivenValue = Number(cashGiven.value);
+    var billAmountValue = Number(billAmount.value);
     if(cashGivenValue < billAmountValue)
         showError("Cash Given should be atleast equal to Bill Amount");
     else
