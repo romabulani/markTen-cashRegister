@@ -12,6 +12,7 @@ function checkBillAmount(){
         showError("Bill Amount should be greater than 0");
     }
     else{
+        errorTag.style.display = "none";
         btnNext.style.display = "none";
         document.querySelector("#second-container").style.display = "block";
         document.querySelector("#third-container").style.display = "block";
@@ -19,6 +20,7 @@ function checkBillAmount(){
 }
 
 function showError(errorMessage){
+    errorTag.style.display = "block";
     errorTag.innerHTML = errorMessage;
 }
 
