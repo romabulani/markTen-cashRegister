@@ -12,8 +12,8 @@ function checkBillAmount(){
         showError("Bill Amount should be greater than 0");
     }
     else{
-        errorTag.style.display = "none";
         btnNext.style.display = "none";
+        billAmount.disabled = true;
         document.querySelector("#second-container").style.display = "block";
         document.querySelector("#third-container").style.display = "block";
     }
@@ -40,6 +40,7 @@ function calculate(billAmountValue,cashGivenValue){
 function checkCashGiven(){
     var cashGivenValue = Number(cashGiven.value);
     var billAmountValue = Number(billAmount.value);
+
     if(cashGivenValue < billAmountValue)
         showError("Cash Given should be atleast equal to Bill Amount");
     else
