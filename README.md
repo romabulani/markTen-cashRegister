@@ -4,4 +4,4 @@ Description : An application which will take the bill Amount and cash given by t
 
 Tech Stack : HTML, CSS and JS
 
-Live Project is [here](https://romabulani-cashregistermanager.netlify.app/)
+Live Project is [here](https://romabulani-cashregistermanager.netlify.app/).
