@@ -16,7 +16,6 @@ function checkBillAmount(){
         btnNext.style.display = "none";
         billAmount.disabled = true;
         document.querySelector("#second-container").style.display = "block";
-        document.querySelector("#third-container").style.display = "block";
     }
 }
 
@@ -30,6 +29,7 @@ function showError(errorMessage){
 
 function calculate(billAmountValue,cashGivenValue){
     errorTag.style.display = "none";
+    document.querySelector("#third-container").style.display = "block";
     var amountToBeReturned = cashGivenValue - billAmountValue;
     for(let i=0; i < notesArray.length; i++){
         var noOfNotes = Math.trunc(amountToBeReturned/notesArray[i]);
